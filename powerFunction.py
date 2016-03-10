@@ -1,5 +1,7 @@
 #Function
 def power(base,exponent): 
+	if exponent == 0:
+		return 1 
 	answer = base 
 	multiplyTimes = 1 
 	#condition to check how many times base is multiplied with itself
@@ -17,9 +19,6 @@ exponent = int(raw_input("Enter an exponent number: "))
 if base == 0 and exponent == 0: 
 	print("That is undefined.")
 	exit()
-	
-if exponent == 0: 
-	print("Your answer is 1") #anything exponent 0 = 1
 
 else: #normal operations
 	answer = power(base,exponent) #calling the function
